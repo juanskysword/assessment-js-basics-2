@@ -28,6 +28,9 @@ const greetUser = (username) => {
 {
 greetUser ('Andrew')
 }
+greetUser ('Andrew')
+
+
 
 
 
@@ -122,7 +125,7 @@ const deals = [
 */
 
 //CODE HERE
-
+deals.title.replace = '15% Off' '10% Off'
 
 
 /*
