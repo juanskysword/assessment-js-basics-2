@@ -31,6 +31,14 @@
 */
 
 //CODE HERE
+const pizza = {
+    'name': 'Pinnapple pizza',
+    'price': 10.99,
+    'category': 'PinnapleLovers',
+    'popularity': 'High',
+    'rating': 4.3,
+    'tags': 'Pp'
+};
 
 
 
@@ -43,6 +51,7 @@
 */
 
 //CODE HERE
+console.log(pizza.popularity)
 
 
 /*
@@ -55,6 +64,7 @@
 //CODE HERE
 
 
+
 /*
     Third, destructure the price off of the
     pizza object.
@@ -63,7 +73,6 @@
 */
 
 //CODE HERE
-
 
 /*
     Fourth, and last, destructure the category
@@ -88,7 +97,7 @@
 */
 
 //CODE HERE
-
+const foodArr =[hamburger, hotdog , nacho, drinks, popcorn]
 
 
 //////////////////PROBLEM 4////////////////////

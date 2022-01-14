@@ -30,6 +30,16 @@
 */
 
 //CODE HERE
+class Ticket {
+    constructor(items, orderTime,CustomerId){
+        this.items = items;
+        this.orderTime = orderTime;
+        this.CustomerId =CustomerId;
+    }
+        updateStatus(newStatus){
+        this.status
+    }
+    }
 
 
 

@@ -20,6 +20,14 @@
 */
 
 //CODE HERE
+class Employee {
+    constructor (name, shifts) {
+        this.name = name;
+        this.shifts = shifts;
+    }
+}
+    const getSchedule = new Employee('name' ,'shifts')
+        console.log()
 
 
 
