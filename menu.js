@@ -33,11 +33,11 @@
 //CODE HERE
 const pizza = {
     'name': 'Pinnapple pizza',
-    'price': 10.99,
-    'category': 'PinnapleLovers',
-    'popularity': 'High',
+    'price': 10.00,
+    'category': 'Hawaiian',
+    'popularity': 5,
     'rating': 4.3,
-    'tags': 'Pp'
+    'tags': 'American'
 };
 
 
@@ -62,7 +62,7 @@ console.log(pizza.popularity)
 */
 
 //CODE HERE
-
+console.log(pizza['price'])
 
 
 /*
@@ -73,7 +73,8 @@ console.log(pizza.popularity)
 */
 
 //CODE HERE
-
+let newVar = pizza.price;
+console.log(newVar)
 /*
     Fourth, and last, destructure the category
     property.
@@ -82,7 +83,8 @@ console.log(pizza.popularity)
 */
 
 //CODE HERE
-
+let newVar2 = pizza.category;
+console.log(newVar2)
 
 //////////////////PROBLEM 3////////////////////
 /* 
@@ -97,7 +99,43 @@ console.log(pizza.popularity)
 */
 
 //CODE HERE
-const foodArr =[hamburger, hotdog , nacho, drinks, popcorn]
+const foodArr = [ 
+{'name': 'Cheese pizza',
+'price': 8.00,
+'category': 'American',
+'popularity': 5,
+'rating': 4.5,
+'tags': 'Adults'
+},
+{'name': 'Pepperoni pizza',
+'price': 10.00,
+'category': 'American',
+'popularity': 5,
+'rating': 4.3,
+'tags': 'Adults'
+},
+{'name': 'Chicken pizza',
+'price': 7.00,
+'category': 'American',
+'popularity': 5,
+'rating': 3.7,
+'tags': 'Adults'
+},
+{'name': 'Kids pizza',
+'price': 5.00,
+'category': 'Hawaiian',
+'popularity': 5,
+'rating': 5,
+'tags': 'Kids'
+},
+{'name': 'Vegan pizza',
+'price': 18.00,
+'category': 'Hawaiian',
+'popularity': 5,
+'rating': 4.9,
+'tags': 'Vegan'
+}
+]    
 
 
 //////////////////PROBLEM 4////////////////////
@@ -114,9 +152,10 @@ const foodArr =[hamburger, hotdog , nacho, drinks, popcorn]
 
 //CODE HERE
 
-// const filteredFood = foodArr.filter(/* CALLBACK HERE */)
+const filteredFood = foodArr.filter((foodObj) => foodObj.name.split(' ').includes('Kids'))
 
 
+console.log(filteredFood)
 
 //////////////////PROBLEM 5////////////////////
 /* 
@@ -158,7 +197,16 @@ const foodArr =[hamburger, hotdog , nacho, drinks, popcorn]
 */
 
 //CODE HERE
+function filterByProperty (properties, number, type) {
+    for (let i = 0; i < foodArr.length; i++) {
+        if (foodArr[i].filter(type > properties )){
 
+        } else {
+
+        }
+
+    }
+}
 
 /*
     Invoke the `filterByProperty` function passing

@@ -57,8 +57,11 @@ let summedPrice = cart.reduce(function (cost, total) {
 */
 
 //CODE HERE
+function calcFinalPrice (summedPrice, couponValue, tax) {
+    console.log((summedPrice * tax) - couponValue)
+     }
 
-
+calcFinalPrice(26.97,.3,1.86)
 
 //////////////////PROBLEM 3////////////////////
 /*  
@@ -82,12 +85,20 @@ let summedPrice = cart.reduce(function (cost, total) {
 
 /*
     TEXT ANSWER HERE
-
+    
 */
-
+// let {name, phone, id_card, visits} = customers
 /*
     Now, create a customer object following your own
     guidelines.
 */
 
 //CODE HERE
+let customers = {
+    name: 'Kate',
+    phone: 2156859666,
+    id_card: 7854,
+    visits: 12
+}
+
+console.log(customers)

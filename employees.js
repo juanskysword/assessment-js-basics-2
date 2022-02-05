@@ -26,8 +26,8 @@ class Employee {
         this.shifts = shifts;
     }
 }
-    const getSchedule = new Employee('name' ,'shifts')
-        console.log()
+    const getSchedule = Employee('name' ,'shifts')
+        console.log (getSchedule)
 
 
 
@@ -42,6 +42,8 @@ class Employee {
 */
 
 //CODE HERE
+let empOne = emp1 ('Jess', 'weekday mornings, weekday afternoons')
+}
 
 /*
     Call the `getSchedule` method on the
@@ -49,6 +51,7 @@ class Employee {
 */
 
 //CODE HERE
+console.log(empOne)
 
 
 /*
@@ -64,8 +67,9 @@ class Employee {
 */
 
 //CODE HERE
-
-
+const clonedUser = { ...empOne };
+clonedUser.name.replace('Jess', 'Nick')
+console.log(clonedUser);
 
 //////////////////PROBLEM 2////////////////////
 /*  
@@ -91,7 +95,9 @@ class Employee {
 */
 
 //CODE HERE
-
+function getEmployees (){
+    console.log()
+}
 
 
 /*

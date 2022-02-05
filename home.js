@@ -22,13 +22,12 @@
 */
 
 //CODE HERE
-const greetUser = (username) => {
-    return 'Welcome back, ' + username;
-}
-{
-greetUser ('Andrew')
-}
-greetUser ('Andrew')
+const greetUser = (USERNAME) => {
+    console.log('Welcome back ' + USERNAME)
+} 
+
+
+greetUser('aBob')
 
 
 
@@ -58,19 +57,14 @@ const deliveryAreaZipCodes = [85205, 85204, 85203, 85213, 85206]
 
 //CODE HERE
 function canWeDeliver (zipCode) {
-    console.log(deliveryAreaZipCodes)
-    for (let i = 0; i < deliveryAreaZipCodes.length; i++)
-     if ([i] == deliveryAreaZipCodes[i]) {
-     console.log("You're in our delivery zone!")}
-     else {
-     console.log("Sorry, we can't deliver to that address")
-     }
-     
-     
-     
-  }
+    for (let i = 0; i < deliveryAreaZipCodes.length; i++){
 
-
+        if (deliveryAreaZipCodes[i] === zipCode) {
+        console.log("You're in our delivery zone!")
+        }     
+    } console.log("Sorry, we can't deliver to that address")
+}
+    canWeDeliver (85225)
 /* 
     Problem 2 Continued
 
@@ -89,8 +83,16 @@ function canWeDeliver (zipCode) {
 */
 
 // CODE HERE
+function canWeDeliverTwo (zipCode) {
+    if (deliveryAreaZipCodes.includes (zipCode,0)) {
+        console.log("You're in our delivery zone!") 
+    } 
+    else { zipCode != 
+    console.log("Sorry, we can't deliver to that address")    
+    } 
+}
 
-
+canWeDeliverTwo(85206)
 //////////////////PROBLEM 3////////////////////
 /* 
     Below is an array of objects that have some
@@ -125,8 +127,11 @@ const deals = [
 */
 
 //CODE HERE
-let new = deals.replace(deals[0].title, 15 , 10);
-console.log(new); 
+
+console.log(deals[0].title.replace(15, 10));
+
+// var newDeal = deals[0].title.replace('15', '10');
+// console.log(newDeal)
 
 /*
     The restaurant is going to continue its
@@ -142,4 +147,6 @@ console.log(new);
 */
 
 //CODE HERE
-let news = deals.replace([1].desc, "March" , "April")
+
+var nextMonth = deals[1].desc.replace('March', 'April',).replace('', '')
+console.log(nextMonth)

@@ -39,7 +39,6 @@ class Ticket {
         updateStatus(newStatus){
         this.status
     }
-    }
 
 
 
@@ -49,13 +48,15 @@ class Ticket {
 
     You can use this sample data or make
     up your own:
-    food ordered: pizza, bread, and soda
-    ordered at: 7:03 PM
-    customer: 575
+    
 */
-
+ 
 //CODE HERE
-
+let firstTicket {
+    food ordered: ('pizza, bread, and soda')
+    ordered at: (7:03 'PM')
+    customer: 575
+ }
 
 /*
     Call the `updateStatus` method on
