@@ -25,11 +25,10 @@ class Employee {
         this.name = name;
         this.shifts = shifts;
     }
+getSchedule(){
+    console.log('Hello' , this.name , 'You work' ,this.shifts);
+  }
 }
-    const getSchedule = Employee('name' ,'shifts')
-        console.log (getSchedule)
-
-
 
 /*
     Create a new instance of your class.
@@ -42,8 +41,8 @@ class Employee {
 */
 
 //CODE HERE
-let empOne = emp1 ('Jess', 'weekday mornings, weekday afternoons')
-}
+let empOne = new Employee('Jess', 'weekday mornings, weekday afternoons')
+
 
 /*
     Call the `getSchedule` method on the
@@ -67,8 +66,7 @@ console.log(empOne)
 */
 
 //CODE HERE
-const clonedUser = { ...empOne };
-clonedUser.name.replace('Jess', 'Nick')
+const clonedUser = { ...empOne, name:'Nick', shifts:'Mornings' };
 console.log(clonedUser);
 
 //////////////////PROBLEM 2////////////////////
@@ -95,8 +93,22 @@ console.log(clonedUser);
 */
 
 //CODE HERE
-function getEmployees (){
-    console.log()
+class Manager extends Employee{
+    constructor (name, shifts, employees) {
+        super(name, shifts) 
+
+        this.employees = employees 
+    }
+    
+
+    getEmployees(){
+        console.log( this.name,'manages',this.employees)
+    }
+
+   addEmployee(emp) {
+    this.employees.push(employees)
+    }
+
 }
 
 
@@ -112,7 +124,7 @@ function getEmployees (){
 */
 
 //CODE HERE
-
+var manager = new Manager('Mari', 'Mon - Friday', 'Jess and Nick')
 
 /*
     Call the `getEmployees` method on the
@@ -120,7 +132,7 @@ function getEmployees (){
 */
 
 //CODE HERE
-
+console.log(manager.getemployees) 
 /*
     Call the `addEmployee` method on the 
     `manager` object passing in the string 
@@ -128,7 +140,7 @@ function getEmployees (){
 */
 
 //CODE HERE 
-
+manager.addEmployee('Nate')
 /*
     Call the `getEmployees` method on the
     `manager` object again to confirm 
@@ -136,3 +148,4 @@ function getEmployees (){
 */
 
 //CODE HERE
+getEmployees()
