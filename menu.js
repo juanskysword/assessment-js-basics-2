@@ -37,7 +37,7 @@ const pizza = {
     'category': 'Hawaiian',
     'popularity': 5,
     'rating': 4.3,
-    'tags': 'American'
+    'tags': ['American','Hawaiin', 'instafood']
 };
 
 
@@ -62,7 +62,7 @@ console.log(pizza.popularity)
 */
 
 //CODE HERE
-console.log(pizza['price'])
+console.log(pizza.tags[1])
 
 
 /*
@@ -73,8 +73,8 @@ console.log(pizza['price'])
 */
 
 //CODE HERE
-let newVar = pizza.price;
-console.log(newVar)
+const { price } = pizza;
+console.log(price)
 /*
     Fourth, and last, destructure the category
     property.
@@ -83,8 +83,8 @@ console.log(newVar)
 */
 
 //CODE HERE
-let newVar2 = pizza.category;
-console.log(newVar2)
+const { category } = pizza;
+console.log(category)
 
 //////////////////PROBLEM 3////////////////////
 /* 
@@ -105,35 +105,35 @@ const foodArr = [
 'category': 'American',
 'popularity': 5,
 'rating': 4.5,
-'tags': 'Adults'
+'tags': ['instafood', 'family', 'delicious']
 },
 {'name': 'Pepperoni pizza',
 'price': 10.00,
 'category': 'American',
 'popularity': 5,
 'rating': 4.3,
-'tags': 'Adults'
+'tags': ['instafood', 'family', 'lunch']
 },
 {'name': 'Chicken pizza',
 'price': 7.00,
 'category': 'American',
 'popularity': 5,
 'rating': 3.7,
-'tags': 'Adults'
+'tags': ['dinner', 'family', 'foodlover']
 },
 {'name': 'Kids pizza',
 'price': 5.00,
 'category': 'Hawaiian',
 'popularity': 5,
 'rating': 5,
-'tags': 'Kids'
+'tags': ['kids', 'foodlover', 'delicious']
 },
 {'name': 'Vegan pizza',
 'price': 18.00,
 'category': 'Hawaiian',
 'popularity': 5,
 'rating': 4.9,
-'tags': 'Vegan'
+'tags': ['foodlover', 'lunch', 'dinner']
 }
 ]    
 
@@ -152,7 +152,7 @@ const foodArr = [
 
 //CODE HERE
 
-const filteredFood = foodArr.filter((foodObj) => foodObj.name.split(' ').includes('Kids'))
+const filteredFood = foodArr.filter((foodObj) => foodObj.tags.includes('delicious'))
 
 
 console.log(filteredFood)
