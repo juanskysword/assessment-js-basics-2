@@ -87,6 +87,7 @@ calcFinalPrice(26.97,.3,1.86)
     TEXT ANSWER HERE
     
 */
+// let {'Kate',2156859666 , 7854, 12} = customers
 // let {name, phone, id_card, visits} = customers
 /*
     Now, create a customer object following your own

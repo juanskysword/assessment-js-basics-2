@@ -199,13 +199,12 @@ console.log(filteredFood)
 //CODE HERE
 function filterByProperty (properties, number, type) {
     for (let i = 0; i < foodArr.length; i++) {
-        if (foodArr[i].filter(type > properties )){
-
-        } else {
-
+        if (foodArr[i].filter == number) {
+            console.log()
         }
+        console.log()
+     }
 
-    }
 }
 
 /*
@@ -216,3 +215,6 @@ function filterByProperty (properties, number, type) {
 */
 
 //CODE HERE
+filterByProperty(number)
+filterByProperty(item)
+filterByProperty(number)
