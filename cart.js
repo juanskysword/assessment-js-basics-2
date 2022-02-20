@@ -95,6 +95,14 @@ calcFinalPrice(26.97,.3,1.86)
 */
 
 //CODE HERE
+let customer = {
+    'name': 'customerName',
+    'phone': 'PhoneNumber',
+    'id_card': 'customerId',
+    'visit': 'VisitsFromCustomer',
+};
+
+
 let customers = {
     name: 'Kate',
     phone: 2156859666,

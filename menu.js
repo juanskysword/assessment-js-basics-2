@@ -197,15 +197,16 @@ console.log(filteredFood)
 */
 
 //CODE HERE
-function filterByProperty (properties, number, type) {
-    for (let i = 0; i < foodArr.length; i++) {
-        if (foodArr[i].filter == number) {
-            console.log()
+function filterByProperty (popularity, number, type) {
+    let filterFood = foodArr.filter(function (foodObj){
+        if (type === 'above') {
+            return parseInt(foodObj[popularity]) > number; 
+        } else {
+            return parseInt(foodObj[popularity]) < number;
         }
-        console.log()
-     }
-
-}
+    }); 
+        return filterFood
+    }
 
 /*
     Invoke the `filterByProperty` function passing
@@ -215,6 +216,4 @@ function filterByProperty (properties, number, type) {
 */
 
 //CODE HERE
-filterByProperty(number)
-filterByProperty(item)
-filterByProperty(number)
+console.log(filterByProperty(5,5,below))

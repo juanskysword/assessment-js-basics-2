@@ -106,7 +106,7 @@ class Manager extends Employee{
         console.log(`${this.name},manages, ${this.employees}`)
     }
 
-   addEmployee(emp) {
+   addEmployee(employees) {
     this.employees.push(employees)
     }
 
@@ -125,7 +125,7 @@ class Manager extends Employee{
 */
 
 //CODE HERE
-let manager1 = new Manager('Mari', 'Mon - Friday', 'Jess and Nick')
+let manager1 = new Manager('Mari', 'Mon - Friday', ['Jess', 'Nick'])
 
 /*
     Call the `getEmployees` method on the
@@ -133,7 +133,7 @@ let manager1 = new Manager('Mari', 'Mon - Friday', 'Jess and Nick')
 */
 
 //CODE HERE
-console.log(manager1) 
+manager1.getEmployees
 /*
     Call the `addEmployee` method on the 
     `manager` object passing in the string 
@@ -141,7 +141,7 @@ console.log(manager1)
 */
 
 //CODE HERE 
-console.log(Manager)
+manager1.addEmployee('Nate')
 // addEmployee('Nate') {
 //     this.employees.push(employees)
 //     }
@@ -154,4 +154,4 @@ console.log(Manager)
 */
 
 //CODE HERE
-console.log(Manager.employees)
+console.log(manager1.employees)
